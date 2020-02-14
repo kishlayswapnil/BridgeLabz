@@ -7,14 +7,14 @@ do
 	prime=1
 	for (( value2=2; value2<=$value1/2; value2++ ))
 	do
-        	if (( $value1 % $value2 == 0 ))
-        	then
-               prime=$(($prime-1))
-       			break;
-        	fi
+			if (( $value1 % $value2 == 0 ))
+			then
+					prime=$(($prime-1))
+					break;
+			fi
 	done
 	if (( $prime == 1 ))
 	then
-		echo "prime no" $j
+		echo "prime no" $value1
 	fi
 done
